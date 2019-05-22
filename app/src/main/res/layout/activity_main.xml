@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/nameEditText">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:padding="2dp"
+        android:layout_toStartOf="@id/nameEditText"
+        android:layout_alignBottom="@id/nameEditText"
+        android:layout_alignTop="@id/nameEditText"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"/>
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_toEndOf="@id/biographyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/biographyEditText"/>
+    <TextView
+        android:padding="2dp"
+        android:id="@+id/biographyText"
+        android:layout_alignBottom="@id/biographyEditText"
+        android:layout_alignTop="@id/biographyEditText"
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biography"/>
+    <EditText
+        android:id="@+id/biographyEditText"
+        android:layout_toEndOf="@id/biographyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/animalPanel"/>
+
+    <LinearLayout
+        android:padding="1dp"
+        android:id="@+id/animalPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonPanel"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/birdIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bird"/>
+        <ImageView
+            android:id="@+id/catIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/cat"/>
+        <ImageView
+            android:id="@+id/dogIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/dog"/>
+        <ImageView
+            android:id="@+id/deerIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/deer"/>
+        <ImageView
+            android:id="@+id/foxIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/fox"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="1dp"
+        android:id="@+id/buttonPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/addTabButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_tab"/>
+        <Button
+            android:id="@+id/clearAllButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_all"/>
+        <Button
+            android:id="@+id/createTabsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_tabs"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

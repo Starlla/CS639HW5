@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CS639SpringHW5</string>
+    <string name="add_tab">ADD TAB</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="create_tabs">CREATE TABS</string>
+    <string name="biography">Biography:</string>
+    <string name="name">Name:</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="include_image">Include Image?:</string>
+    <string name="name_cannot_be_empty">Name cannot be empty!</string>
+    <string name="bio_cannot_be_empty">Biography cannot be empty!</string>
+    <string name="no_more_than_4_item">Please add no more than 4 item!</string>
+    <string name="at_least_1_item">There need at least on item to add tab!</string>
+
+    <string name="bird_title">Bird</string>
+    <string name="bird_description">This is a bird. It can usually be found flying or looking for worms in the first</string>
+    <string name="cat_title">Cat</string>
+    <string name="cat_description">This is a cat. They are big fans of milk and yarn. They do not like water and also don\'t like when you touch their tails.</string>
+    <string name="dog_title">Dog</string>
+    <string name="dog_description">This is a dog. Sometimes referred to as a human\'s best friend. They like playing with bones and frisbees.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
